@@ -1,0 +1,12 @@
+parameters:
+    pdf.annotation_reader.class: m4t1t0\fopPdfBundle\EventListener\AnnotationReader
+    pdf.fop_process.class: m4t1t0\fopPdfBundle\Process\Fop
+
+services:
+    pdf.listener.annotation_reader:
+        class: %pdf.annotation_reader.class%
+        arguments: [@annotation_reader, @kernel, @service_container]
+        tags: 
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+            - { name: kernel.event_listener, event: kernel.view, method: onKernelView }
+            - { name: kernel.event_listener, event: kernel.terminate, method: onKernelTerminate }
