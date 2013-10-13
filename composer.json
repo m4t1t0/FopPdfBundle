@@ -1,5 +1,5 @@
 {
-    "name":         "m4t1t0/listeners-debug-command-bundle",
+    "name":         "m4t1t0/fop-pdf-bundle",
     "description":  "Symfony 2 Apache FOP integration",
     "homepage":     "https://github.com/m4t1t0/FopPdfBundle.git",
     "type":         "symfony-bundle",
@@ -7,7 +7,7 @@
     "license":      "GPL V2",
     "authors":      [
     {
-      "name":     "Rafael Matito Matito"      
+        "name":     "Rafael Matito Matito"      
     }
     ],
         "require":      {
