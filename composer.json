@@ -1,0 +1,21 @@
+{
+    "name":         "m4t1t0/listeners-debug-command-bundle",
+    "description":  "Symfony 2 Apache FOP integration",
+    "homepage":     "https://github.com/m4t1t0/FopPdfBundle.git",
+    "type":         "symfony-bundle",
+    "keywords":     ["FOP", "PDF"],
+    "license":      "GPL V2",
+    "authors":      [
+    {
+      "name":     "Rafael Matito Matito"      
+    }
+    ],
+        "require":      {
+            "php":              ">=5.3.3",
+            "symfony/symfony":  ">=2.3"
+        },
+        "autoload":     {
+            "psr-0": { "m4t1t0\\FopPdfBundle": "" }
+        },
+        "target-dir": "m4t1t0/FopPdfBundle"
+}
