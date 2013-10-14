@@ -1,6 +1,5 @@
 parameters:
-    pdf.annotation_reader.class: m4t1t0\fopPdfBundle\EventListener\AnnotationReader
-    pdf.fop_process.class: m4t1t0\fopPdfBundle\Process\Fop
+    pdf.annotation_reader.class: m4t1t0\FopPdfBundle\EventListener\AnnotationReader
 
 services:
     pdf.listener.annotation_reader:

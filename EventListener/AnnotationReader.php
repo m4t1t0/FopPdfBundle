@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\DependencyInjection\Container;
-use m4t1t0\fopPdfBundle\Annotation\Pdf;
+use m4t1t0\FopPdfBundle\Annotation\Pdf;
 use m4t1t0\FopPdfBundle\Process\Fop;
 
 /**
@@ -70,6 +70,7 @@ class AnnotationReader
                     //TODO: Add suport for PHP templates
                     $guesser = $this->container->get('sensio_framework_extra.view.guesser');
                     $template = $guesser->guessTemplateName($controller, $request, 'twig');
+                    $template = str_replace('html.twig', 'fo.twig', $template);
 
                     $request->attributes->set(
                         '_pdf_template',
