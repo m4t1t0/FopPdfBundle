@@ -24,17 +24,17 @@ $ php composer.phar update m4t1t0/fop-pdf-bundle
 ## Add FopPdfBundle to your application kernel
 
 ``` php
-<?php
+    <?php
 
-  // app/AppKernel.php
-  public function registerBundles()
-  {
-    return array(
-      // ...
-      new m4t1t0\FopPdfBundle\FopPdfBundle(),      
-      // ...
-      );
-  }
+    // app/AppKernel.php
+    public function registerBundles()
+    {
+        return array(
+            // ...
+            new m4t1t0\FopPdfBundle\FopPdfBundle(),      
+            // ...
+        );
+    }
 ```
 
 # Usage
@@ -42,7 +42,7 @@ $ php composer.phar update m4t1t0/fop-pdf-bundle
 Inside a controller file, create an action, use the Pdf annotation
 
 ``` php
-<?php
+    <?php
     /**
      * @Route("/download")
      * @Pdf()   
@@ -74,10 +74,10 @@ The Pdf annotation suport these options:
 - output: the name of the output file. You can use the PHP strftime function format, more info: http://es1.php.net/manual/en/function.strftime.php
 - template: Indicates the template to render instead the guesser one.
 
-If you need more conrol over the output file name, you can use "_pdf_output" variable in your return
+If you need more conrol over the output file name, you can use `_pdf_output` variable in your return
 
 ``` php
-<?php
+    <?php
     /**
      * @Route("/download")
      * @Pdf()   
