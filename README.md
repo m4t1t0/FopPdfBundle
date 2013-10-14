@@ -74,7 +74,7 @@ The Pdf annotation suport these options:
 - output: the name of the output file. You can use the PHP strftime function format, more info: http://es1.php.net/manual/en/function.strftime.php
 - template: Indicates the template to render instead the guesser one.
 
-If you need more conrol over the output file name, you can use _pdf_output variable in your return
+If you need more conrol over the output file name, you can use "_pdf_output" variable in your return
 
 ``` php
 <?php
