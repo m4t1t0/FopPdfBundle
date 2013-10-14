@@ -18,7 +18,7 @@ Add to your composer.json
 Use composer to download the new requirement
 
 ``` 
-$ php composer.phar update egulias/listeners-debug-command-bundle
+$ php composer.phar update m4t1t0/fop-pdf-bundle
 ```
 
 ## Add FopPdfBundle to your application kernel
