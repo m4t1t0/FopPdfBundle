@@ -39,7 +39,7 @@ public function registerBundles()
 
 ## Configure the bundle
 
-If the fop executable is different that /usr/bin/fop you need to configure this in your config.yml file
+If the fop executable is different than /usr/bin/fop you need to configure this in your config.yml file
 
 ```
 # FopPdfBundle Configuration
