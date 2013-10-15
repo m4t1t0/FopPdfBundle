@@ -37,6 +37,16 @@ public function registerBundles()
 }
 ```
 
+## Configure the bundle
+
+If the fop executable is different that /usr/bin/fop you need to configure this in your config.yml file
+
+```
+# FopPdfBundle Configuration
+fop_pdf:
+    fop: /usr/local/bin/fop
+```
+
 # Usage
 
 Use the Pdf annotation in your action
