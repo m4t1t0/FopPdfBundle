@@ -107,3 +107,7 @@ public function downloadPdfAction()
 - Create a service to render the XSL-FO template instead of annotation.
 - Create twig extensions to help the creation of XSL-FO templates.
 - Create more base templates.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/m4t1t0/foppdfbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
